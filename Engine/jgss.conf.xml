@@ -1,0 +1,47 @@
+<jgss>
+	<SERVER>
+		<PORT>
+			1099
+		</PORT>
+		<HOST>
+			localhost
+		</HOST>
+	</SERVER>
+	<DB>
+		<DRIVER>
+			sun.jdbc.odbc.JdbcOdbcDriver
+		</DRIVER>
+		<DIALECT>
+			net.sf.hibernate.dialect.GenericDialect
+		</DIALECT>
+		<URL>
+			jdbc:odbc:DRIVER=Microsoft Access Driver (*.mdb);DBQ=D:\gtsbases\localDB.mdb;
+		</URL>
+		<USER>
+		</USER>
+		<PWD>
+		</PWD>
+	</DB>
+</jgss>
+<!--<jgss>
+	<SERVER>
+		<PORT>
+			1099
+		</PORT>
+	</SERVER>
+	<DB>
+		<DRIVER>
+			org.postgresql.Driver
+		</DRIVER>
+		<DIALECT>
+			net.sf.hibernate.dialect.GenericDialect
+		</DIALECT>
+		<URL>
+			jdbc:postgresql://localhost:5432/test
+		</URL>
+		<USER>
+		</USER>
+		<PWD>
+		</PWD>
+	</DB>
+</jgss>-->

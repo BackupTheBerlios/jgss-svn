@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping package="net.dnsalias.hangtime.core.impl">
+	<class name="PeopleImpl" table="people" polymorphism="implicit">
+		<id	name="id"	type="java.lang.Long" column="idpeople">
+			<generator class="vm"/>
+		</id>
+		<version  name="version" column="version" 	type="long"/>
+		<property name="mobilePhone" column="mobilephone" type="string" not-null="false" length="15"/>
+		<property name="firstName" column="firstname" type="string"	not-null="false" length="50"/>
+		<property name="email" column="email" type="string" not-null="false" length="255"/>
+		<property name="homePhone" column="homephone" type="string"	not-null="false" length="15"/>
+		<property name="workPhone" column="workphone" type="string" not-null="false" length="15"/>
+		<property name="name" column="name" type="string" not-null="true" length="50"/>
+
+		<many-to-one name="address" class="AddressImpl" not-null="true">
+			<column name="idaddress"/>
+		</many-to-one>
+		<joined-subclass name="ProfessorImpl" table="professors">
+			<key column="idpeople"/>
+			<component name="color" class="net.dnsalias.hangtime.core.HColor">
+				<property name="red"   column="colorR" 	type="integer" length="2"/>
+				<property name="green"  column="colorG" 	type="integer" length="2"/>
+				<property name="blue" 	column="colorB" 	type="integer" length="2"/>
+			</component>
+			<many-to-one name="office" class="RoomImpl" not-null="true">
+				<column name="idoffice"/>
+			</many-to-one>
+			<set name="availabilities" table="availabilities" lazy="false">
+           		<key column="idprof"/>
+		        <one-to-many class="AvailabilityImpl"/>
+	        </set>
+	        <!--<set name="courses" table="courses" lazy="false" >
+	      		<key column="idprof"/>
+      			<many-to-many class="CourseImpl" 
+      			column="idcourse" outer-join="true" />
+	    	</set>-->
+		</joined-subclass>
+		<joined-subclass name="StudentImpl" table="students">
+			<key column="idpeople"/>
+			<many-to-one name="group" class="GroupImpl" not-null="true">
+				<column name="idgroup"/>
+			</many-to-one>
+		</joined-subclass>
+		<joined-subclass name="UserImpl" table="users">
+			<key column="idpeople"/>
+			<property name="ldapName" column="ldapname" type="string" length="30"/>
+			<property name="password" column="password" type="string" length="32"/>
+			
+			<many-to-one name="role" class="RoleImpl" not-null="true">
+				<column name="idrole"/>
+			</many-to-one>
+		</joined-subclass>
+		
+	</class>
+</hibernate-mapping>

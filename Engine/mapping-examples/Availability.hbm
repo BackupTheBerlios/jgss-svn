@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping package="net.dnsalias.hangtime.core.impl">
+	<class name="AvailabilityImpl" table="availabilities">
+		<id	name="id" type="java.lang.Long" column="idavailability">
+			<generator class="vm"/>
+		</id>
+		<version  name="version" column="version" 	type="long"/>
+		<property name="days" column="days" type="integer" not-null="false" length="2"/>
+		<property name="beginDate" column="begindate" type="date" not-null="false" length="4"/>
+		<property name="type" column="type" type="boolean" not-null="false" length="1"/>
+		<property name="endDate" column="enddate" type="date" not-null="false" length="4"/>
+		<property name="hours" column="hours" type="java.lang.Long" not-null="false" length="8"/>
+		<many-to-one name="prof" class="ProfessorImpl" not-null="true">
+			<column name="idprof"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

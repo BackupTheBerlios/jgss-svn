@@ -1,0 +1,121 @@
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+ERROR RMI TCP Connection(4)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(4)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans la clause LEVEL, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans la clause LEVEL, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans la clause LEVEL, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans la clause LEVEL, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+ERROR RMI TCP Connection(4)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans la clause LEVEL, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(4)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans la clause LEVEL, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans la clause LEVEL, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans la clause LEVEL, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+DEBUG main org.apache.commons.configuration.ConfigurationUtils - Configuration loaded from the base path jgss.conf.xml
+INFO main de.berlios.jgss.main.JGSSEngine - Serveur Démarré
+INFO main de.berlios.jgss.main.JGSSEngine - IP serveur : 129.182.42.88
+INFO main de.berlios.jgss.main.JGSSEngine - Port serveur : 1099
+INFO main de.berlios.jgss.main.JGSSEngine - Export du remote manager en tant que : 'remotemanager'
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.
+ERROR RMI TCP Connection(2)-129.182.42.88 net.sf.hibernate.util.JDBCExceptionReporter - [Microsoft][Pilote ODBC Microsoft Access] Dans l'instruction SELECT, un mot réservé ou un argument est mal orthographié ou absent, ou la ponctuation est incorrecte.

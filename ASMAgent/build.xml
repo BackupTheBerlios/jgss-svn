@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="ASMAgent" default="all">
+
+	<property environment="env" />
+	<property name="basedir" value="." />
+
+	<property name="src.dir" value="${basedir}/src" />
+	<property name="bin.dir" value="${basedir}/bin" />
+	<property name="lib.dir" value="${basedir}/../CommonsLibs" />
+	<property name="jar.dir" value="${basedir}/jar" />
+
+	<target name="all" depends="jar">
+	</target>
+
+	<target name="compile">
+		<mkdir dir="${bin.dir}" />
+
+		<javac destdir="${bin.dir}" source="1.5">
+			<src path="${src.dir}" />
+
+			<classpath>
+				<pathelement path="${bin.dir}" />
+				<fileset dir="${lib.dir}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+
+	</target>
+
+	<target name="jar" depends="compile">
+		<mkdir dir="${jar.dir}" />
+
+		<jar destfile="${jar.dir}/asm.agent.jar" basedir="${bin.dir}">
+			
+			<manifest>
+				<!-- file="MANIFEST.MF" -->
+				<attribute name="Premain-Class" value="de.berlios.jgss.asmagent.asm.RMIClassTransformer" />
+				<attribute name="Can-Redefine-Classes" value="false" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+		<delete dir="${jar.dir}" />
+	</target>
+	
+</project>

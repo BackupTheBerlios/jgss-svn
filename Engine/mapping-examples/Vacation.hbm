@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping package="net.dnsalias.hangtime.core.impl">
+	<class name="VacationImpl" table="vacations">
+		<id name="id" type="java.lang.Long" column="idvacation">
+			<generator class="vm"/>
+		</id>
+		<version  name="version" column="version" 	type="long"/>
+		<property name="beginDate" column="begindate" type="date" not-null="false" length="4"/>
+		<property name="endDate" column="enddate" type="date" not-null="false" length="4"/>
+
+		<many-to-one name="group" class="GroupImpl" not-null="true">
+			<column name="idgroup"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

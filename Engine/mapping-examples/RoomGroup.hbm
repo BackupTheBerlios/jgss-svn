@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping package="net.dnsalias.hangtime.core.impl">
+	<class name="RoomGroupImpl" table="roomsgroups">
+		<id name="id" type="java.lang.Long" column="idroomgroup">
+			<generator class="vm"/>
+		</id>
+		<version  name="version" column="version" 	type="long"/>
+		<property name="name" column="name" type="string" not-null="true" length="30"/>
+		<component name="color" class="net.dnsalias.hangtime.core.HColor">
+			<property name="red"   column="colorR" 	type="integer" length="2"/>
+			<property name="green"  column="colorG" 	type="integer" length="2"/>
+			<property name="blue" 	column="colorB" 	type="integer" length="2"/>
+		</component>
+        <set name="rooms" table="rgtor" lazy="false" >
+      		<key column="idroomgroup"/>
+      		<many-to-many class="RoomImpl" column="idroom" outer-join="true"/>
+	    </set>
+	    <!--<set name="courses" table="courses" lazy="false" >
+	      		<key column="idroomgroup"/>
+      			<many-to-many class="CourseImpl" 
+      			column="idcourse" outer-join="true" />
+   		</set>-->
+	    <joined-subclass name="RoomImpl" table="rooms">
+			<key column="idroom"/>
+			<property name="capacity" column="capacity" type="integer" not-null="false" length="2"/>
+			<property name="stage" column="stage" type="integer" not-null="false" length="2"/>
+		
+			
+			<many-to-one name="roomType" class="RoomTypeImpl" not-null="true">
+				<column name="idroomtype"/>
+			</many-to-one>
+
+			<many-to-one name="building" class="BuildingImpl" not-null="true">
+				<column name="idbuilding"/>
+			</many-to-one>
+
+    	    <set name="roomsGroups" table="rgtor" lazy="false" >
+	      		<key column="idroom"/>
+      			<many-to-many class="RoomGroupImpl" 
+      			column="idroomgroup" outer-join="true" />
+	    	</set>
+		</joined-subclass>
+	</class>
+</hibernate-mapping>

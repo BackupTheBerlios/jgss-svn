@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping package="net.dnsalias.hangtime.core.impl">
+	<class name="CourseImpl" table="courses">
+		<id name="id" type="java.lang.Long" column="idcourse" unsaved-value="null">
+			<generator class="vm"/>
+		</id>
+		<version  name="version" column="version" 	type="long"/>
+		<property name="dateTime" column="datetime" type="java.util.Date" not-null="false"/>
+		<property name="length" column="length" type="integer" not-null="false" length="2"/>
+
+		<many-to-one name="prof" class="ProfessorImpl" not-null="true">
+			<column name="idprof"/>
+		</many-to-one>
+
+		<many-to-one name="roomGroup" class="RoomGroupImpl" not-null="true">
+			<column name="idroomgroup"/>
+		</many-to-one>
+
+		<many-to-one name="teaching" class="TeachingImpl" not-null="true">
+			<column name="idteaching"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

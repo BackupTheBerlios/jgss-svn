@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="JGSS Engine" default="all">
+
+	<property environment="env" />
+	<property name="basedir" value="." />
+
+	<property name="src.dir" value="${basedir}/src" />
+	<property name="bin.dir" value="${basedir}/bin" />
+	<property name="lib.dir" value="${basedir}/../CommonsLibs" />
+	<property name="jar.dir" value="${basedir}/jar" />
+	<property name="builder" value="JGSS Team" />
+	<property name="mainclass" value="de.berlios.jgss.main.JGSSEngine" />
+	
+	<property name="classpath" value="lib/asm-1.5.3.jar lib/cglib-full-2.0.2.jar lib/commons-collections-2.1.1.jar lib/commons-lang-1.0.1.jar lib/commons-logging-1.0.4.jar lib/dom4j-1.4.jar lib/hibernate2.jar lib/jdbc2_0-stdext.jar lib/jta.jar lib/log4j-1.2.8.jar lib/odmg-3.0.jar" />
+
+		
+	<target name="all" depends="jar">
+	</target>
+
+	<target name="compile">
+		<mkdir dir="${bin.dir}" />
+
+		<javac destdir="${bin.dir}" source="1.5">
+			<src path="${src.dir}" />
+
+			<classpath>
+				<pathelement path="${bin.dir}" />
+				<fileset dir="${lib.dir}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+
+	</target>
+
+	<target name="jar" depends="compile">
+		<mkdir dir="${jar.dir}" />
+
+		<jar destfile="${jar.dir}/jgss.engine.jar" basedir="${bin.dir}">
+			<manifest>
+					<attribute name="Main-Class" value="${mainclass}"/>
+					<attribute name="Class-Path" value="${classpath}" />
+			</manifest>
+		</jar>
+		<jar destfile="${jar.dir}/jgss.api.jar" basedir="${bin.dir}" 
+			includes="de/berlios/jgss/api/model/**,de/berlios/jgss/pref/**,de/berlios/jgss/core/**" 
+			excludes="de/berlios/jgss/core/session/**,de/berlios/jgss/core/transaction/**,
+			de/berlios/jgss/core/event/EntityEventManager.class,de/berlios/jgss/core/event/impl/EntityEventManagerImpl*">
+			
+		</jar>
+	</target>
+
+	<target name="clean">
+		<delete dir="${bin.dir}" />
+		<delete dir="${jar.dir}" />
+	</target>
+	
+</project>

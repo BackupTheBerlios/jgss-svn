@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping package="net.dnsalias.hangtime.core.impl">
+	<class name="TeachingImpl" table="teachings">
+		<id name="id" type="java.lang.Long" column="idteaching">
+			<generator class="vm"/>
+		</id>
+		<version  name="version" column="version" 	type="long"/>
+		<property name="name" column="name" type="string" not-null="true" length="30"/>
+		<property name="factor" column="factor" type="integer" not-null="false" length="2"/>
+		<component name="color" class="net.dnsalias.hangtime.core.HColor">
+			<property name="red"   column="colorR" 	type="integer" length="2"/>
+			<property name="green"  column="colorG" 	type="integer" length="2"/>
+			<property name="blue" 	column="colorB" 	type="integer" length="2"/>
+		</component>
+		<property name="defLength" column="deflength" type="integer" not-null="false" length="2"/>
+		<property name="numberHours" column="numberhours" type="java.lang.Long" not-null="false" length="4"/>
+
+		<many-to-one name="defRoom" class="RoomGroupImpl" not-null="true">
+			<column name="defroom"/>
+		</many-to-one>
+
+		<many-to-one name="defProf" class="ProfessorImpl" not-null="true">
+			<column name="defprof"/>
+		</many-to-one>
+
+		<many-to-one name="bloc" class="BlocImpl" not-null="true">
+			<column name="idbloc"/>
+		</many-to-one>
+
+		<many-to-one name="matter" class="MatterImpl" not-null="true">
+			<column name="idmatter"/>
+		</many-to-one>
+
+		<many-to-one name="defMat" class="MaterialImpl" not-null="true">
+			<column name="defmat"/>
+		</many-to-one>
+
+		<many-to-one name="group" class="GroupImpl" not-null="true">
+			<column name="idgroup"/>
+		</many-to-one>
+		<!--<set name="courses" table="courses" lazy="false" >
+	      		<key column="idteaching"/>
+      			<many-to-many class="CourseImpl" 
+      			column="idcourse" outer-join="true" />
+    	</set>-->
+	</class>
+</hibernate-mapping>

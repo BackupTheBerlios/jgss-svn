@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration
+    PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
+
+<hibernate-configuration>
+	<session-factory name="Hibernate">
+		<mapping resource="MaterialType.hbm" />
+		<mapping resource="Availability.hbm" />
+		<mapping resource="RoomGroup.hbm" />
+		<mapping resource="Teaching.hbm" />
+		<mapping resource="RoomType.hbm" />
+		<mapping resource="Role.hbm" />
+		<mapping resource="Course.hbm" />
+		<mapping resource="Vacation.hbm" />
+		<mapping resource="Group.hbm" />
+		<mapping resource="People.hbm" />
+		<mapping resource="Material.hbm" />
+		<mapping resource="Address.hbm" />
+		<mapping resource="Bloc.hbm" />
+		<mapping resource="Matter.hbm" />
+		<mapping resource="Building.hbm" />
+	</session-factory>
+</hibernate-configuration>

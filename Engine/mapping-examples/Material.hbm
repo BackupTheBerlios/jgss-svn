@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd" >
+
+<hibernate-mapping package="net.dnsalias.hangtime.core.impl">
+	<class name="MaterialImpl" table="materials">
+		<id name="id" type="java.lang.Long" column="idmaterial">
+			<generator class="vm"/>
+		</id>
+		<version  name="version" column="version" 	type="long"/>
+		<property name="name" column="name" type="string" not-null="true" length="30"/>
+		<component name="color" class="net.dnsalias.hangtime.core.HColor">
+			<property name="red"   column="colorR" 	type="integer" length="2"/>
+			<property name="green"  column="colorG" 	type="integer" length="2"/>
+			<property name="blue" 	column="colorB" 	type="integer" length="2"/>
+		</component>
+		<many-to-one name="owner" class="PeopleImpl" not-null="true">
+			<column name="idowner"/>
+		</many-to-one>
+
+		<many-to-one name="typeMat" class="MaterialTypeImpl" not-null="true">
+			<column name="idtypemat"/>
+		</many-to-one>
+
+		<many-to-one name="room" class="RoomImpl" not-null="true">
+			<column name="idroom"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>
